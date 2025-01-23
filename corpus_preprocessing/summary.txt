@@ -1,0 +1,30 @@
+Here's a summary of the key findings:
+
+Data Coverage:
+  * Successfully processed 19 languages (hin files were not found)
+  * Each language has train/test/valid splits
+  * Generated length distribution plots for each split
+  * Saved detailed statistics in JSON format
+
+Key Observations:
+  * Most languages have good coverage in training sets (ranging from 10K to 4.1M pairs)
+  * Malayalam (mal) has the largest training set with 4.1M pairs
+  * Manipuri (mni) has the smallest training set with 10K pairs
+
+Character set sizes are consistent:
+  * English: 26 characters across all languages
+  * Native: varies between 44-70 characters depending on the language
+
+Data Quality:
+  * Missing scores are common in test splits (expected as they're for evaluation)
+  * Score ranges typically between -0.350 to 0.000 when present
+  * Some languages have more missing fields than others
+
+Source distribution varies:
+  * IndicCorp is the largest source for most languages
+  * Dakshina provides significant data for some languages
+  * Various other sources (Wikidata, Samanantar, etc.) contribute smaller portions
+
+Generated Files:
+  * Length distribution plots: data/corpus_preprocessing/Analysis/plots/
+  * Detailed statistics: data/corpus_preprocessing/Analysis/stats/

@@ -132,3 +132,7 @@ dmypy.json
 
 *.pt
 *.zip
+
+# Ignore all the raw data
+raw/
+processed/
