@@ -28,3 +28,35 @@ Source distribution varies:
 Generated Files:
   * Length distribution plots: data/corpus_preprocessing/Analysis/plots/
   * Detailed statistics: data/corpus_preprocessing/Analysis/stats/
+
+========================
+
+Analysis of Hindi Dataset:
+
+Size and Distribution:
+  * Large training set (1.3M pairs), with smaller test (10K) and validation (6.3K) sets
+  * Well-distributed across multiple data sources, with IndicCorp being the primary source (73.6%)
+
+Word Length Characteristics:
+  * Hindi words are consistently shorter than their English translations
+  * Average length ratio (Hindi:English) is approximately 0.9:1
+  * Training set shows longer average lengths (7.79:8.69) compared to validation set (6.54:7.47)
+  * Rich character set usage: 69 unique Hindi characters in training, reducing to 62 in validation
+
+Quality Metrics:
+  * Confidence scores range from -0.350 to -0.002
+  * Consistent mean scores across splits (train: -0.197, valid: -0.192)
+  * Notable number of missing scores (26.4% in training set)
+
+Source Distribution:
+  * Diverse sources ensure variety in the dataset
+  * Hierarchical contribution: IndicCorp > Samanantar > Existing > Dakshina/Wikidata > AK-Freq
+  * Test set focuses on AK-derived sources (AK-Freq, AK-NEF, AK-NEI) and Dakshina
+
+Character Set Evolution:
+  * Training set has the richest character set (69 chars)
+  * Gradual reduction in character set size across splits (train: 69 → test: 64 → valid: 62)
+  * Consistent English character set (26) across all splits
+
+This analysis reveals a comprehensive Hindi transliteration dataset with good size, source diversity, and consistent quality metrics, though with some gaps in confidence scoring.
+
